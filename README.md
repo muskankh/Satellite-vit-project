@@ -1,8 +1,6 @@
 # Vision Transformers for Satellite Image Classification: Zero-Shot, Linear Probe and Fine-Tuning, with a Robustness Study
 
-**Author:** [YOUR NAME] | **Course / Programme:** [YOUR COURSE] | **Date:** [DATE]
-**Report:** `report/report.pdf` (Word: `report/report.docx`) | **Slides:** `slides/presentation.pptx` | **Release for marking:** `v1.0-submission`
-
+**Author:** [Muskan Khurana] | **Course / Programme:** [MAAI901] | 
 ## Overview
 
 This project applies pre-trained transformer models to a four-class satellite land-cover dataset
@@ -20,7 +18,7 @@ This project applies pre-trained transformer models to a four-class satellite la
 
 ## Dataset
 
-* Source: **[PASTE DATASET SOURCE LINK AND LICENCE]**
+* Source: **[https://www.kaggle.com/code/sujithmandala/satellite-image-classification-cnn/input]**
 * 5,631 images: cloudy 1,500 · desert 1,131 · green_area 1,500 · water 1,500
 * **Dataset artefact found:** cloudy and desert images are 256x256, while green_area and water images are 64x64, so
   image size alone predicts the class pair (a size-only rule scores about 53% vs 25% chance). A colour-only baseline
@@ -33,10 +31,10 @@ This project applies pre-trained transformer models to a four-class satellite la
 
 | # | Notebook | Colab | Inputs | Produces | Approx. time (T4) |
 |---|---|---|---|---|---|
-| 1 | `01_setup_explore_zeroshot_clip.ipynb`: audit, duplicate check, split, zero-shot CLIP | [Open](https://colab.research.google.com/github/YOUR-USERNAME/satellite-vit-project/blob/main/notebooks/01_setup_explore_zeroshot_clip.ipynb) | `data-2.zip` | `split.csv`, CLIP embeddings, results JSON | ~5 min |
-| 2 | `02_linear_probe_clip_dinov2.ipynb`: linear probes, learning curve | [Open](https://colab.research.google.com/github/YOUR-USERNAME/satellite-vit-project/blob/main/notebooks/02_linear_probe_clip_dinov2.ipynb) | `split.csv`, `data-2.zip` | embeddings, results JSON | ~10 min |
-| 3 | `03_finetune_vit.ipynb`: fine-tune ViT, LR search, 3 seeds | [Open](https://colab.research.google.com/github/YOUR-USERNAME/satellite-vit-project/blob/main/notebooks/03_finetune_vit.ipynb) | `split.csv`, `data-2.zip` | saved model, predictions, results JSON | ~20-30 min |
-| 4 | `04_robustness_retrieval_stats.ipynb`: robustness, statistics, retrieval, UMAP | [Open](https://colab.research.google.com/github/YOUR-USERNAME/satellite-vit-project/blob/main/notebooks/04_robustness_retrieval_stats.ipynb) | `split.csv`, `data-2.zip`, model from Notebook 3 | figures, results JSON | ~10-20 min |
+| 1 | `01_setup_explore_zeroshot_clip.ipynb`: audit, duplicate check, split, zero-shot CLIP | [Open](https://colab.research.google.com/github/muskankh/Satellite-vit-project/blob/main/notebooks/01_setup_explore_zeroshot_clip.ipynb) | `data-2.zip` | `split.csv`, CLIP embeddings, results JSON | ~5 min |
+| 2 | `02_linear_probe_clip_dinov2.ipynb`: linear probes, learning curve | [Open](https://colab.research.google.com/github/muskankh/Satellite-vit-project/blob/main/notebooks/02_linear_probe_clip_dinov2.ipynb) | `split.csv`, `data-2.zip` | embeddings, results JSON | ~10 min |
+| 3 | `03_finetune_vit.ipynb`: fine-tune ViT, LR search, 3 seeds | [Open](https://colab.research.google.com/github/muskankh/Satellite-vit-project/blob/main/notebooks/03_finetune_vit.ipynb) | `split.csv`, `data-2.zip` | saved model, predictions, results JSON | ~20-30 min |
+| 4 | `04_robustness_retrieval_stats.ipynb`: robustness, statistics, retrieval, UMAP | [Open](https://colab.research.google.com/github/muskankh/Satellite-vit-project/blob/main/notebooks/04_robustness_retrieval_stats.ipynb) | `split.csv`, `data-2.zip`, model from Notebook 3 | figures, results JSON | ~10-20 min |
 
 ## How to reproduce
 
@@ -100,7 +98,7 @@ requirements.txt
 ## Trained model
 
 The fine-tuned model (about 330 MB) is too large for GitHub.
-Download: **[PASTE GOOGLE DRIVE / HUGGING FACE LINK]**. Place the folder `vit_best_model/` next to the notebooks (or in
+Download: **[https://github.com/muskankh/Satellite-vit-project/releases/tag/v1.0-submission]**. Place the folder `vit_best_model/` next to the notebooks (or in
 `My Drive/satellite_project/outputs_nb3/`) before running Notebook 4.
 
 ## Limitations
@@ -115,10 +113,6 @@ Download: **[PASTE GOOGLE DRIVE / HUGGING FACE LINK]**. Place the folder `vit_be
 Satellite-image classifiers can support environmental monitoring but are dual-use (surveillance). The geographic coverage of
 the dataset is unknown, so results may not transfer to other regions, sensors or seasons. See the report for discussion.
 
-## AI-assistance statement
-
-[Describe any AI tool use as required by your institution's policy, e.g. "Claude was used to help draft notebook code and
-explain methods; all results were produced and checked by the author."]
 
 ## References
 
