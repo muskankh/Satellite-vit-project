@@ -1,0 +1,688 @@
+{
+  "quick_test": false,
+  "n_test": 843,
+  "variants": [
+    "original",
+    "same_res",
+    "grayscale",
+    "hue_shift",
+    "darker",
+    "brighter"
+  ],
+  "models": [
+    "Zero-shot CLIP",
+    "CLIP probe",
+    "DINOv2 probe",
+    "Fine-tuned ViT"
+  ],
+  "accuracy": {
+    "Zero-shot CLIP": {
+      "original": 0.7461447212336892,
+      "same_res": 0.7354685646500593,
+      "grayscale": 0.5551601423487544,
+      "hue_shift": 0.4045077105575326,
+      "darker": 0.6524317912218268,
+      "brighter": 0.6180308422301305
+    },
+    "CLIP probe": {
+      "original": 0.9988137603795967,
+      "same_res": 0.8778173190984578,
+      "grayscale": 0.7698695136417556,
+      "hue_shift": 0.8861209964412812,
+      "darker": 0.9062870699881376,
+      "brighter": 0.8932384341637011
+    },
+    "DINOv2 probe": {
+      "original": 0.99644128113879,
+      "same_res": 0.9845788849347569,
+      "grayscale": 0.8849347568208779,
+      "hue_shift": 0.9833926453143536,
+      "darker": 0.9940688018979834,
+      "brighter": 0.9905100830367735
+    },
+    "Fine-tuned ViT": {
+      "original": 0.9988137603795967,
+      "same_res": 0.9822064056939501,
+      "grayscale": 0.8991696322657177,
+      "hue_shift": 0.9822064056939501,
+      "darker": 0.7580071174377224,
+      "brighter": 0.8790035587188612
+    }
+  },
+  "macro_f1": {
+    "Zero-shot CLIP": {
+      "original": 0.7481575226855253,
+      "same_res": 0.7375650361654327,
+      "grayscale": 0.5279562177295685,
+      "hue_shift": 0.3731667782477579,
+      "darker": 0.6184059773507563,
+      "brighter": 0.6302373025747646
+    },
+    "CLIP probe": {
+      "original": 0.9988839230106177,
+      "same_res": 0.8573752554486043,
+      "grayscale": 0.7406793106989986,
+      "hue_shift": 0.8845499780102499,
+      "darker": 0.9123738556569093,
+      "brighter": 0.8694264540393273
+    },
+    "DINOv2 probe": {
+      "original": 0.996651769031853,
+      "same_res": 0.9842476785672197,
+      "grayscale": 0.8809092334265168,
+      "hue_shift": 0.9837580041752363,
+      "darker": 0.9944270721746395,
+      "brighter": 0.9910736978228337
+    },
+    "Fine-tuned ViT": {
+      "original": 0.9988838785221357,
+      "same_res": 0.983248218698642,
+      "grayscale": 0.9009789138119542,
+      "hue_shift": 0.982330472747178,
+      "darker": 0.7668111825882507,
+      "brighter": 0.8647457382618411
+    }
+  },
+  "accuracy_ci95": {
+    "Zero-shot CLIP": {
+      "original": [
+        0.7153024911032029,
+        0.7758007117437722
+      ],
+      "same_res": [
+        0.7046263345195729,
+        0.763938315539739
+      ],
+      "grayscale": [
+        0.5219454329774614,
+        0.5883748517200474
+      ],
+      "hue_shift": [
+        0.37129300118623965,
+        0.4377224199288256
+      ],
+      "darker": [
+        0.6204033214709371,
+        0.6856465005931198
+      ],
+      "brighter": [
+        0.5848161328588375,
+        0.6500593119810202
+      ]
+    },
+    "CLIP probe": {
+      "original": [
+        0.99644128113879,
+        1.0
+      ],
+      "same_res": [
+        0.8552787663107948,
+        0.900355871886121
+      ],
+      "grayscale": [
+        0.7402135231316725,
+        0.797153024911032
+      ],
+      "hue_shift": [
+        0.863582443653618,
+        0.9074733096085409
+      ],
+      "darker": [
+        0.8861209964412812,
+        0.9252669039145908
+      ],
+      "brighter": [
+        0.8706998813760379,
+        0.9134045077105575
+      ]
+    },
+    "DINOv2 probe": {
+      "original": [
+        0.9916963226571768,
+        1.0
+      ],
+      "same_res": [
+        0.9762752075919335,
+        0.9917259786476867
+      ],
+      "grayscale": [
+        0.863582443653618,
+        0.9051008303677343
+      ],
+      "hue_shift": [
+        0.9739027283511269,
+        0.9916963226571768
+      ],
+      "darker": [
+        0.9881376037959668,
+        0.9988137603795967
+      ],
+      "brighter": [
+        0.9833926453143536,
+        0.99644128113879
+      ]
+    },
+    "Fine-tuned ViT": {
+      "original": [
+        0.99644128113879,
+        1.0
+      ],
+      "same_res": [
+        0.9727164887307236,
+        0.9905100830367735
+      ],
+      "grayscale": [
+        0.8801897983392646,
+        0.9193357058125742
+      ],
+      "hue_shift": [
+        0.9727164887307236,
+        0.9905100830367735
+      ],
+      "darker": [
+        0.7283511269276394,
+        0.7864768683274022
+      ],
+      "brighter": [
+        0.8552787663107948,
+        0.900355871886121
+      ]
+    }
+  },
+  "drop_vs_original": [
+    {
+      "model": "Zero-shot CLIP",
+      "variant": "same_res",
+      "change": -0.010676156583629894,
+      "ci_lo": -0.022538552787663108,
+      "ci_hi": 0.0012158956109132428,
+      "significant": false
+    },
+    {
+      "model": "Zero-shot CLIP",
+      "variant": "grayscale",
+      "change": -0.19098457888493475,
+      "ci_lo": -0.22538552787663108,
+      "ci_hi": -0.15658362989323843,
+      "significant": true
+    },
+    {
+      "model": "Zero-shot CLIP",
+      "variant": "hue_shift",
+      "change": -0.3416370106761566,
+      "ci_lo": -0.37841043890865955,
+      "ci_hi": -0.30486358244365364,
+      "significant": true
+    },
+    {
+      "model": "Zero-shot CLIP",
+      "variant": "darker",
+      "change": -0.0937129300118624,
+      "ci_lo": -0.12455516014234876,
+      "ci_hi": -0.06405693950177936,
+      "significant": true
+    },
+    {
+      "model": "Zero-shot CLIP",
+      "variant": "brighter",
+      "change": -0.12811387900355872,
+      "ci_lo": -0.1553973902728351,
+      "ci_hi": -0.099644128113879,
+      "significant": true
+    },
+    {
+      "model": "CLIP probe",
+      "variant": "same_res",
+      "change": -0.12099644128113879,
+      "ci_lo": -0.14472123368920523,
+      "ci_hi": -0.09845788849347568,
+      "significant": true
+    },
+    {
+      "model": "CLIP probe",
+      "variant": "grayscale",
+      "change": -0.22894424673784106,
+      "ci_lo": -0.2586002372479241,
+      "ci_hi": -0.20166073546856464,
+      "significant": true
+    },
+    {
+      "model": "CLIP probe",
+      "variant": "hue_shift",
+      "change": -0.11269276393831554,
+      "ci_lo": -0.13407473309608542,
+      "ci_hi": -0.09134045077105575,
+      "significant": true
+    },
+    {
+      "model": "CLIP probe",
+      "variant": "darker",
+      "change": -0.09252669039145907,
+      "ci_lo": -0.11269276393831554,
+      "ci_hi": -0.07354685646500593,
+      "significant": true
+    },
+    {
+      "model": "CLIP probe",
+      "variant": "brighter",
+      "change": -0.1055753262158956,
+      "ci_lo": -0.1269276393831554,
+      "ci_hi": -0.08540925266903915,
+      "significant": true
+    },
+    {
+      "model": "DINOv2 probe",
+      "variant": "same_res",
+      "change": -0.011862396204033215,
+      "ci_lo": -0.018979833926453145,
+      "ci_hi": -0.004744958481613286,
+      "significant": true
+    },
+    {
+      "model": "DINOv2 probe",
+      "variant": "grayscale",
+      "change": -0.11150652431791222,
+      "ci_lo": -0.13404507710557534,
+      "ci_hi": -0.09134045077105575,
+      "significant": true
+    },
+    {
+      "model": "DINOv2 probe",
+      "variant": "hue_shift",
+      "change": -0.013048635824436536,
+      "ci_lo": -0.022538552787663108,
+      "ci_hi": -0.0035587188612099642,
+      "significant": true
+    },
+    {
+      "model": "DINOv2 probe",
+      "variant": "darker",
+      "change": -0.002372479240806643,
+      "ci_lo": -0.00830367734282325,
+      "ci_hi": 0.002372479240806643,
+      "significant": false
+    },
+    {
+      "model": "DINOv2 probe",
+      "variant": "brighter",
+      "change": -0.005931198102016607,
+      "ci_lo": -0.011862396204033215,
+      "ci_hi": -0.0011862396204033216,
+      "significant": true
+    },
+    {
+      "model": "Fine-tuned ViT",
+      "variant": "same_res",
+      "change": -0.0166073546856465,
+      "ci_lo": -0.02491103202846975,
+      "ci_hi": -0.00830367734282325,
+      "significant": true
+    },
+    {
+      "model": "Fine-tuned ViT",
+      "variant": "grayscale",
+      "change": -0.099644128113879,
+      "ci_lo": -0.11862396204033215,
+      "ci_hi": -0.07947805456702253,
+      "significant": true
+    },
+    {
+      "model": "Fine-tuned ViT",
+      "variant": "hue_shift",
+      "change": -0.0166073546856465,
+      "ci_lo": -0.02609727164887307,
+      "ci_hi": -0.00830367734282325,
+      "significant": true
+    },
+    {
+      "model": "Fine-tuned ViT",
+      "variant": "darker",
+      "change": -0.24080664294187426,
+      "ci_lo": -0.2704626334519573,
+      "ci_hi": -0.21233689205219455,
+      "significant": true
+    },
+    {
+      "model": "Fine-tuned ViT",
+      "variant": "brighter",
+      "change": -0.11981020166073547,
+      "ci_lo": -0.1423487544483986,
+      "ci_hi": -0.09845788849347568,
+      "significant": true
+    }
+  ],
+  "group_errors": [
+    {
+      "model": "Zero-shot CLIP",
+      "variant": "original",
+      "cross_group_error": 0.11981020166073547,
+      "within_group_error": 0.13404507710557534
+    },
+    {
+      "model": "Zero-shot CLIP",
+      "variant": "same_res",
+      "cross_group_error": 0.1221826809015421,
+      "within_group_error": 0.1423487544483986
+    },
+    {
+      "model": "Zero-shot CLIP",
+      "variant": "grayscale",
+      "cross_group_error": 0.3202846975088968,
+      "within_group_error": 0.12455516014234876
+    },
+    {
+      "model": "Zero-shot CLIP",
+      "variant": "hue_shift",
+      "cross_group_error": 0.534994068801898,
+      "within_group_error": 0.060498220640569395
+    },
+    {
+      "model": "Zero-shot CLIP",
+      "variant": "darker",
+      "cross_group_error": 0.11387900355871886,
+      "within_group_error": 0.23368920521945433
+    },
+    {
+      "model": "Zero-shot CLIP",
+      "variant": "brighter",
+      "cross_group_error": 0.28825622775800713,
+      "within_group_error": 0.0937129300118624
+    },
+    {
+      "model": "CLIP probe",
+      "variant": "original",
+      "cross_group_error": 0.0,
+      "within_group_error": 0.0011862396204033216
+    },
+    {
+      "model": "CLIP probe",
+      "variant": "same_res",
+      "cross_group_error": 0.11981020166073547,
+      "within_group_error": 0.002372479240806643
+    },
+    {
+      "model": "CLIP probe",
+      "variant": "grayscale",
+      "cross_group_error": 0.03084223013048636,
+      "within_group_error": 0.199288256227758
+    },
+    {
+      "model": "CLIP probe",
+      "variant": "hue_shift",
+      "cross_group_error": 0.004744958481613286,
+      "within_group_error": 0.10913404507710557
+    },
+    {
+      "model": "CLIP probe",
+      "variant": "darker",
+      "cross_group_error": 0.022538552787663108,
+      "within_group_error": 0.0711743772241993
+    },
+    {
+      "model": "CLIP probe",
+      "variant": "brighter",
+      "cross_group_error": 0.002372479240806643,
+      "within_group_error": 0.10438908659549229
+    },
+    {
+      "model": "DINOv2 probe",
+      "variant": "original",
+      "cross_group_error": 0.0,
+      "within_group_error": 0.0035587188612099642
+    },
+    {
+      "model": "DINOv2 probe",
+      "variant": "same_res",
+      "cross_group_error": 0.005931198102016607,
+      "within_group_error": 0.009489916963226572
+    },
+    {
+      "model": "DINOv2 probe",
+      "variant": "grayscale",
+      "cross_group_error": 0.10320284697508897,
+      "within_group_error": 0.011862396204033215
+    },
+    {
+      "model": "DINOv2 probe",
+      "variant": "hue_shift",
+      "cross_group_error": 0.011862396204033215,
+      "within_group_error": 0.004744958481613286
+    },
+    {
+      "model": "DINOv2 probe",
+      "variant": "darker",
+      "cross_group_error": 0.002372479240806643,
+      "within_group_error": 0.0035587188612099642
+    },
+    {
+      "model": "DINOv2 probe",
+      "variant": "brighter",
+      "cross_group_error": 0.005931198102016607,
+      "within_group_error": 0.0035587188612099642
+    },
+    {
+      "model": "Fine-tuned ViT",
+      "variant": "original",
+      "cross_group_error": 0.0,
+      "within_group_error": 0.0011862396204033216
+    },
+    {
+      "model": "Fine-tuned ViT",
+      "variant": "same_res",
+      "cross_group_error": 0.0166073546856465,
+      "within_group_error": 0.0011862396204033216
+    },
+    {
+      "model": "Fine-tuned ViT",
+      "variant": "grayscale",
+      "cross_group_error": 0.06168446026097272,
+      "within_group_error": 0.03914590747330961
+    },
+    {
+      "model": "Fine-tuned ViT",
+      "variant": "hue_shift",
+      "cross_group_error": 0.005931198102016607,
+      "within_group_error": 0.011862396204033215
+    },
+    {
+      "model": "Fine-tuned ViT",
+      "variant": "darker",
+      "cross_group_error": 0.1933570581257414,
+      "within_group_error": 0.04863582443653618
+    },
+    {
+      "model": "Fine-tuned ViT",
+      "variant": "brighter",
+      "cross_group_error": 0.03202846975088968,
+      "within_group_error": 0.08896797153024912
+    }
+  ],
+  "pairwise_tests": [
+    {
+      "A": "Zero-shot CLIP",
+      "B": "CLIP probe",
+      "acc_A": 0.7461447212336892,
+      "acc_B": 0.9988137603795967,
+      "diff": -0.2526690391459075,
+      "ci_lo": -0.2835112692763938,
+      "ci_hi": -0.22419928825622776,
+      "only_A_right": 1,
+      "only_B_right": 214,
+      "p_mcnemar": 8.204170532336466e-63,
+      "p_bonferroni": 4.92250231940188e-62,
+      "verdict": "different"
+    },
+    {
+      "A": "Zero-shot CLIP",
+      "B": "DINOv2 probe",
+      "acc_A": 0.7461447212336892,
+      "acc_B": 0.99644128113879,
+      "diff": -0.25029655990510086,
+      "ci_lo": -0.28113879003558717,
+      "ci_hi": -0.22182680901542112,
+      "only_A_right": 1,
+      "only_B_right": 212,
+      "p_mcnemar": 3.251282396148155e-62,
+      "p_bonferroni": 1.950769437688893e-61,
+      "verdict": "different"
+    },
+    {
+      "A": "Zero-shot CLIP",
+      "B": "Fine-tuned ViT",
+      "acc_A": 0.7461447212336892,
+      "acc_B": 0.9988137603795967,
+      "diff": -0.2526690391459075,
+      "ci_lo": -0.2835112692763938,
+      "ci_hi": -0.22416963226571784,
+      "only_A_right": 1,
+      "only_B_right": 214,
+      "p_mcnemar": 8.204170532336466e-63,
+      "p_bonferroni": 4.92250231940188e-62,
+      "verdict": "different"
+    },
+    {
+      "A": "CLIP probe",
+      "B": "DINOv2 probe",
+      "acc_A": 0.9988137603795967,
+      "acc_B": 0.99644128113879,
+      "diff": 0.002372479240806643,
+      "ci_lo": -0.002372479240806643,
+      "ci_hi": 0.0071174377224199285,
+      "only_A_right": 3,
+      "only_B_right": 1,
+      "p_mcnemar": 0.625,
+      "p_bonferroni": 1.0,
+      "verdict": "no clear difference"
+    },
+    {
+      "A": "CLIP probe",
+      "B": "Fine-tuned ViT",
+      "acc_A": 0.9988137603795967,
+      "acc_B": 0.9988137603795967,
+      "diff": 0.0,
+      "ci_lo": -0.0035587188612099642,
+      "ci_hi": 0.0035587188612099642,
+      "only_A_right": 1,
+      "only_B_right": 1,
+      "p_mcnemar": 1.0,
+      "p_bonferroni": 1.0,
+      "verdict": "no clear difference"
+    },
+    {
+      "A": "DINOv2 probe",
+      "B": "Fine-tuned ViT",
+      "acc_A": 0.99644128113879,
+      "acc_B": 0.9988137603795967,
+      "diff": -0.002372479240806643,
+      "ci_lo": -0.005931198102016607,
+      "ci_hi": 0.0,
+      "only_A_right": 0,
+      "only_B_right": 2,
+      "p_mcnemar": 0.5,
+      "p_bonferroni": 1.0,
+      "verdict": "no clear difference"
+    }
+  ],
+  "retrieval_image_to_image": {
+    "CLIP": {
+      "P@1": 0.9916963226571768,
+      "P@5": 0.9881376037959668,
+      "P@10": 0.9841043890865955,
+      "P@20": 0.9776986951364176,
+      "per_class_P@10": {
+        "cloudy": 0.9955555555555555,
+        "desert": 0.9994117647058823,
+        "green_area": 0.9968888888888889,
+        "water": 0.9479820627802691
+      }
+    },
+    "DINOv2": {
+      "P@1": 0.9952550415183867,
+      "P@5": 0.9890865954922894,
+      "P@10": 0.9831553973902728,
+      "P@20": 0.9791221826809016,
+      "per_class_P@10": {
+        "cloudy": 0.9893333333333333,
+        "desert": 0.9970588235294118,
+        "green_area": 0.9946666666666667,
+        "water": 0.9547085201793722
+      }
+    }
+  },
+  "retrieval_text_to_image": [
+    {
+      "query": "[class prompt] cloudy",
+      "target_class": "cloudy",
+      "P@10": 1.0,
+      "P@50": 0.68,
+      "n_relevant": 225
+    },
+    {
+      "query": "[class prompt] desert",
+      "target_class": "desert",
+      "P@10": 1.0,
+      "P@50": 0.92,
+      "n_relevant": 170
+    },
+    {
+      "query": "[class prompt] green_area",
+      "target_class": "green_area",
+      "P@10": 1.0,
+      "P@50": 0.98,
+      "n_relevant": 225
+    },
+    {
+      "query": "[class prompt] water",
+      "target_class": "water",
+      "P@10": 0.0,
+      "P@50": 0.14,
+      "n_relevant": 223
+    },
+    {
+      "query": "a satellite image of a desert",
+      "target_class": "desert",
+      "P@10": 1.0,
+      "P@50": 0.9,
+      "n_relevant": 170
+    },
+    {
+      "query": "a satellite image of clouds",
+      "target_class": "cloudy",
+      "P@10": 1.0,
+      "P@50": 0.96,
+      "n_relevant": 225
+    },
+    {
+      "query": "a satellite image of a lake",
+      "target_class": "water",
+      "P@10": 0.0,
+      "P@50": 0.08,
+      "n_relevant": 223
+    },
+    {
+      "query": "a satellite image of a forest",
+      "target_class": "green_area",
+      "P@10": 1.0,
+      "P@50": 0.98,
+      "n_relevant": 225
+    },
+    {
+      "query": "a satellite image of the sea",
+      "target_class": "water",
+      "P@10": 0.1,
+      "P@50": 0.16,
+      "n_relevant": 223
+    },
+    {
+      "query": "a satellite image of farmland",
+      "target_class": "green_area",
+      "P@10": 1.0,
+      "P@50": 0.96,
+      "n_relevant": 225
+    }
+  ],
+  "prompt_used": [
+    "rich_names",
+    "from_space"
+  ]
+}

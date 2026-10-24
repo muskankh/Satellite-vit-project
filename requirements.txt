@@ -1,0 +1,13 @@
+# Developed and run on Google Colab (Python 3.13, NVIDIA T4 GPU). Colab already includes most of these.
+# Versions are intentionally not pinned; record yours with `pip freeze` if exact reproducibility is required.
+torch
+torchvision
+transformers
+scikit-learn
+numpy
+pandas
+matplotlib
+Pillow
+tqdm
+umap-learn
+jupyter

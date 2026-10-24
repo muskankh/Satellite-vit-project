@@ -1,0 +1,27 @@
+{
+  "zero_shot_clip_b32": {
+    "prompt": [
+      "rich_names",
+      "from_space"
+    ],
+    "test_accuracy": 0.7461447212336892,
+    "test_accuracy_ci95": [
+      0.7152728351126928,
+      0.7758303677342823
+    ],
+    "test_macro_f1": 0.7481575226855253,
+    "test_macro_f1_ci95": [
+      0.7157463898027113,
+      0.7765340535032951
+    ],
+    "n_test": 843
+  },
+  "colour_only_baseline_accuracy": 0.8242603550295858,
+  "size_only_rule_accuracy": 0.5327650506126798,
+  "split_counts": {
+    "train": 3942,
+    "val": 846,
+    "test": 843
+  },
+  "seed": 42
+}

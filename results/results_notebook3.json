@@ -1,0 +1,56 @@
+{
+  "quick_test": false,
+  "model": "google/vit-base-patch16-224",
+  "epochs": 4,
+  "batch_size": 32,
+  "weight_decay": 0.01,
+  "warmup_fraction": 0.1,
+  "chosen_lr": 1e-05,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "best_seed_by_val": 42,
+  "lr_search_val_macro_f1": {
+    "1e-05": 0.9988839230106177,
+    "2e-05": 0.9988839230106177,
+    "5e-05": 0.9988839230106177
+  },
+  "per_seed": {
+    "42": {
+      "best_epoch": 1,
+      "val_macro_f1": 0.9988839230106177,
+      "test_accuracy": 0.9988137603795967,
+      "test_macro_f1": 0.9988838785221357
+    },
+    "43": {
+      "best_epoch": 2,
+      "val_macro_f1": 0.9988839230106177,
+      "test_accuracy": 1.0,
+      "test_macro_f1": 1.0
+    },
+    "44": {
+      "best_epoch": 2,
+      "val_macro_f1": 0.9977678571428572,
+      "test_accuracy": 1.0,
+      "test_macro_f1": 1.0
+    }
+  },
+  "mean_test_accuracy": 0.999604586793199,
+  "std_test_accuracy": 0.000684875764163255,
+  "mean_test_macro_f1": 0.9996279595073786,
+  "std_test_macro_f1": 0.0006443930356932933,
+  "best_seed_test_accuracy_ci95": [
+    0.99644128113879,
+    1.0
+  ],
+  "ensemble_test_accuracy": 1.0,
+  "ensemble_test_macro_f1": 1.0,
+  "n_test": 843,
+  "compute": {
+    "gpu": "Tesla T4",
+    "gpu_hours": 0.2712243507968055,
+    "energy_kwh_upper_bound_gpu_only": 0.01898570455577639
+  }
+}
