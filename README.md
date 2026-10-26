@@ -31,10 +31,10 @@ This project applies pre-trained transformer models to a four-class satellite la
 
 | # | Notebook | Colab | Inputs | Produces | Approx. time (T4) |
 |---|---|---|---|---|---|
-| 1 | `01_setup_explore_zeroshot_clip.ipynb`: audit, duplicate check, split, zero-shot CLIP | [Open](https://colab.research.google.com/github/muskankh/Satellite-vit-project/blob/main/notebooks/01_setup_explore_zeroshot_clip.ipynb) | `data-2.zip` | `split.csv`, CLIP embeddings, results JSON | ~5 min |
+| 1 | `01_setup_explore_zeroshot_clip.ipynb`: audit, duplicate check, split, zero-shot CLIP | [Open](https://github.com/muskankh/Satellite-vit-project/blob/main/01_setup_explore_zeroshot_clip_2.ipynb) | `data-2.zip` | `split.csv`, CLIP embeddings, results JSON | ~5 min |
 | 2 | `02_linear_probe_clip_dinov2.ipynb`: linear probes, learning curve | [Open](https://github.com/muskankh/Satellite-vit-project/blob/main/02_linear_probe_clip_dinov2_2.ipynb) | `split.csv`, `data-2.zip` | embeddings, results JSON | ~10 min |
-| 3 | `03_finetune_vit.ipynb`: fine-tune ViT, LR search, 3 seeds | [Open](https://colab.research.google.com/github/muskankh/Satellite-vit-project/blob/main/notebooks/03_finetune_vit.ipynb) | `split.csv`, `data-2.zip` | saved model, predictions, results JSON | ~20-30 min |
-| 4 | `04_robustness_retrieval_stats.ipynb`: robustness, statistics, retrieval, UMAP | [Open](https://colab.research.google.com/github/muskankh/Satellite-vit-project/blob/main/notebooks/04_robustness_retrieval_stats.ipynb) | `split.csv`, `data-2.zip`, model from Notebook 3 | figures, results JSON | ~10-20 min |
+| 3 | `03_finetune_vit.ipynb`: fine-tune ViT, LR search, 3 seeds | [Open](https://github.com/muskankh/Satellite-vit-project/blob/main/03_finetune_vit.ipynb) | `split.csv`, `data-2.zip` | saved model, predictions, results JSON | ~20-30 min |
+| 4 | `04_robustness_retrieval_stats.ipynb`: robustness, statistics, retrieval, UMAP | [Open](https://github.com/muskankh/Satellite-vit-project/blob/main/04_robustness_retrieval_stats.ipynb) | `split.csv`, `data-2.zip`, model from Notebook 3 | figures, results JSON | ~10-20 min |
 
 ## How to reproduce
 
